@@ -9,4 +9,11 @@
         tools:showIn="@layout/app_bar_nd"
         tools:context="org.udg.pds.todoandroid.activity.NavDrawerActivity">
 
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/text_nd"
+        android:text="Hello world!"
+        />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
