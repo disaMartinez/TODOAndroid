@@ -47,8 +47,7 @@ public class Login extends AppCompatActivity {
         // This is the listener that will be used when the user presses the "Login" button
         binding.loginButton.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                Login.this.checkCredentials(binding.loginUsername.getText().toString(),
-                    binding.loginPassword.getText().toString());
+                Login.this.checkCredentials(binding.loginUsername.getText().toString(), binding.loginPassword.getText().toString());
             }
         });
 
@@ -59,6 +58,7 @@ public class Login extends AppCompatActivity {
         UserLogin ul = new UserLogin();
         ul.username = username;
         ul.password = password;
+
         Call<User> call = mTodoService.login(ul);
         call.enqueue(new Callback<User>() {
             @Override
